@@ -1,0 +1,2 @@
+# MvpRxRetrofit
+Android项目框架，使用MVP解耦，使用Rxjava链式调用，使用Retrofit网络请求以及数据缓存
