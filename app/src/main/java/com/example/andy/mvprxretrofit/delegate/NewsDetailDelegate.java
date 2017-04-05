@@ -54,8 +54,14 @@ public class NewsDetailDelegate extends AppDelegate {
 
     @Override
     public void initWidget() {
-
+        initWebView();
     }
+
+    @Override
+    public Toolbar getToolBar() {
+        return toolbar;
+    }
+
     /**
      * 初始化webview
      */

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.example.andy.mvprxretrofit.R;
@@ -79,6 +80,7 @@ public abstract class BaseRecyclerViewDelegate extends AppDelegate implements Lo
         initRecyclerView();
         initFloatingActionMenu();
     }
+
 
     /**
      * 初始化悬浮菜单
