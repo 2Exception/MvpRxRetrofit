@@ -1,0 +1,134 @@
+package com.example.andy.mvprxretrofit.utils;
+
+import com.example.andy.mvprxretrofit.MyApplication;
+import com.orhanobut.logger.Logger;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+/**
+ *
+ * 将日志输出到本地文件
+ *
+ * 文件名： MvpRxRetrofit
+ * Created by WestDeco on 2017/3/29.
+ * 签名： 用风雅的态度看世界，用痞子的风格过日子
+ * E-mail：  717616019@qq.com
+ * GitHub：  https://github.com/KellenHu
+ * CSDN：    http://my.csdn.net/westdeco
+ */
+public class WriteLogUtil {
+    public static final String PATH = MyApplication.cacheDir + "/Log";
+    public static final String LOG_FILE_NAME = "log.txt";
+
+    /**
+     * 是否写入日志文件
+     */
+    public static final boolean LOG_WRITE_TO_FILE = true;
+
+
+    /**
+     * 错误信息
+     *
+     * @param TAG
+     * @param msg
+     */
+    public final static void e(String TAG, String msg) {
+        Logger.e(TAG, msg);
+        if (LOG_WRITE_TO_FILE)
+            writeLogtoFile("e", TAG, msg);
+    }
+
+    /**
+     * 警告信息
+     *
+     * @param TAG
+     * @param msg
+     */
+    public final static void w(String TAG, String msg) {
+        Logger.w(TAG, msg);
+        if (LOG_WRITE_TO_FILE)
+            writeLogtoFile("w", TAG, msg);
+    }
+
+    /**
+     * 调试信息
+     *
+     * @param TAG
+     * @param msg
+     */
+    public final static void d(String TAG, String msg) {
+        Logger.d(TAG, msg);
+        if (LOG_WRITE_TO_FILE)
+            writeLogtoFile("d", TAG, msg);
+    }
+
+    /**
+     * 提示信息
+     *
+     * @param TAG
+     * @param msg
+     */
+    public final static void i(String TAG, String msg) {
+        Logger.i(TAG, msg);
+        if (LOG_WRITE_TO_FILE)
+            writeLogtoFile("i", TAG, msg);
+    }
+
+
+    /**
+     * 写入日志到文件中
+     *
+     * @param logType
+     * @param tag
+     * @param msg
+     */
+    private static void writeLogtoFile(String logType, String tag, String msg) {
+        isExist(PATH);
+        //isDel();
+        String needWriteMessage = "\r\n"
+                + TimeUtil.getNowMDHMSTime()
+                + "\r\n"
+                + logType
+                + "    "
+                + tag
+                + "\r\n"
+                + msg;
+        File file = new File(PATH, LOG_FILE_NAME);
+        try {
+            FileWriter filerWriter = new FileWriter(file, true);
+            BufferedWriter bufWriter = new BufferedWriter(filerWriter);
+            bufWriter.write(needWriteMessage);
+            bufWriter.newLine();
+            bufWriter.close();
+            filerWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 删除日志文件
+     */
+    public static void delFile() {
+
+        File file = new File(PATH, LOG_FILE_NAME);
+        if (file.exists()) {
+            file.delete();
+        }
+    }
+
+    /**
+     * 判断文件夹是否存在,如果不存在则创建文件夹
+     *
+     * @param path
+     */
+    public static void isExist(String path) {
+        File file = new File(path);
+        if (!file.exists()) {
+            file.mkdirs();
+        }
+    }
+}

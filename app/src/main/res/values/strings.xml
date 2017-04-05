@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MvpRxRetrofit</string>
+
+    <!--底部导航条名称-->
+    <string name="main_navigation_home">首页</string>
+    <string name="main_navigation_im">品类</string>
+    <string name="main_navigation_interest">购物车</string>
+    <string name="main_navigation_user">我的</string>
+    <string name="loading">loading</string>
+    <string name="btn_try_again">点击重试</string>
+    <string name="weather_edit_hint">请输入城市名（如：北京）</string>
+    <string name="weather_btn">查询天气</string>
+    <string name="weather_dialog_aqi">AQI：</string>
+    <string name="weather_dialog_sd">湿度</string>
+    <string name="weather_dialog_wind_direction">风向</string>
+    <string name="weather_dialog_wind_power">风力强度</string>
+    <string name="transition_news_img">transition_news_img</string>
+
+</resources>
