@@ -38,7 +38,6 @@ public  abstract class AppDelegate implements IDelegate{
         int rootLayoutId = getRootLayoutId();
         rootView = inflater.inflate(rootLayoutId,container,false);
         ButterKnife.bind(this,rootView);
-
     }
 
     @Override

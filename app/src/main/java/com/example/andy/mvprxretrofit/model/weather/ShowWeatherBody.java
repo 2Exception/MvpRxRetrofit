@@ -19,8 +19,9 @@ import com.google.gson.annotations.SerializedName;
  */
 
 public class ShowWeatherBody {
+
     @SerializedName("f1")
-    public ShowApiWeatherNormalInner f1;//后一天的天气预报
+    public ShowApiWeatherNormalInner Weather;//后一天的天气预报
     @SerializedName("now")
     public ShowApiWeatherNowInner now;//现在的天气预报
 

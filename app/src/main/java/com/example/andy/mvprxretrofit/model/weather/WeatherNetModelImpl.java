@@ -36,10 +36,12 @@ public class WeatherNetModelImpl  implements INetLoadModel<ShowWeatherBody>,IFil
 
     @Override
     public void onNetLoad(final OnNetResponseListener onNetResponseListener, String... params) {
+
         Observable<ShowApiResponse<ShowWeatherBody>> observable = RetrofitService.createBaiduAPI()
                 .getWeather(params[0],params[1],params[2],params[3],params[4]);
 
-        observable.subscribeOn(Schedulers.io())
+        observable
+                .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .doOnSubscribe(new Consumer<Disposable>(){
                     @Override
@@ -84,7 +86,6 @@ public class WeatherNetModelImpl  implements INetLoadModel<ShowWeatherBody>,IFil
     @Override
     public void onFileUpload(final OnNetResponseListener<String> onNetResponseListener, String description, Map<String, RequestBody> fileMap) {
         Observable<String> observable = RetrofitService.createShowAPI().upload(description,fileMap);
-
         observable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .doOnSubscribe(new Consumer<Disposable>() {

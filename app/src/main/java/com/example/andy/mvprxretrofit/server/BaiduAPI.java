@@ -41,7 +41,8 @@ public interface BaiduAPI {
      */
     @GET(BizInterface.WEATHER_URL)
     @Headers("apikey:" + BizInterface._API_KEY)
-    Observable<ShowApiResponse<ShowWeatherBody>> getWeather(@Query("area") String area,
+    Observable<ShowApiResponse<ShowWeatherBody>> getWeather(
+                                                            @Query("area") String area,
                                                             @Query("needMoreDay") String needMoreDay,
                                                             @Query("needIndex") String needIndex,
                                                             @Query("needAlarm") String needAlarm,

@@ -63,7 +63,7 @@ public class HomeFragment extends FragmentPresenter<HomeFragmentDelegate> implem
 
 
     @Override
-    protected void bindEventListener() {
+    protected void bindEventListener(){
         super.bindEventListener();
         viewDelegate.setOnClickListener(this,R.id.bt_weather);
     }
@@ -76,34 +76,29 @@ public class HomeFragment extends FragmentPresenter<HomeFragmentDelegate> implem
             viewDelegate.showSnackbar("输入不能为空");
             return;
         }
-
         weatherNetModel.onNetLoad(new OnNetResponseListener<ShowWeatherBody>() {
             @Override
-            public void onStart() {
+            public void onStart(){
                 viewDelegate.showLoading();
             }
-
             @Override
             public void onFinish(){
                 viewDelegate.showContent();
             }
-
             @Override
-            public void onSuccess(ShowWeatherBody data) {
+            public void onSuccess(ShowWeatherBody data){
                 viewDelegate.closeSoftInput();
                 viewDelegate.showNowWeatherDialog(data);
             }
-
             @Override
-            public void onFailure(Throwable t) {
+            public void onFailure(Throwable t){
                 viewDelegate.showSnackbar("请求错误");
                 Logger.e("Net Failure!");
             }
         },viewDelegate.getInputLocation(),NEED_MORE_DAY,NEED_INDEX,NEED_ALARM,NEED_3_HOUR_FORCAST);
     }
-
     @Override
-    public void onClick(View v) {
+    public void onClick(View v){
         switch (v.getId()){
             case R.id.bt_weather:
                 netWeather();//请求天气接口
