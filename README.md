@@ -30,7 +30,7 @@ Android项目框架，使用MVP解耦，使用Rxjava链式调用，使用Retrofi
 ## **截图**
 
 #### 新闻相亲
-![](./picture3.png)
+![](./picture3.PNG)
 #### 天气预报
 ![](./picture1.png)
 #### 新闻列表
