@@ -9,7 +9,7 @@ offer
 ## **简介**
 美图，天气查询应用
 - Android一些次新的技术的一个合集示例
-- API来自网络免费API（感谢提供api的服务商，良心啊~，不过*最新版本美图大全已经改为收费的API*）
+- API来自网络免费API
 - MVP模式（使用ViewDelegate解耦，非常感谢**kymjs**提供的mvp思想，在他的基础上我有一些改动，希望能在这个应用上做个最佳实践）@kymjs(https://github.com/kymjs/TheMVP)
 - leakcanary简单引入
 - Retrofit（+RxJava）网络请求
@@ -24,7 +24,7 @@ offer
 - 支持新闻查看详情，CollapsingToolbarLayout +　NestedScrollView
 - 支持右滑返回
 - 增加*离线缓存*机制(使用Retrofit和Okhttp实现网络缓存)
-- 崩溃捕捉并写入本地文件(有存储卡写到存储卡，没有保存到内存),目录：**/data/data/com.ly.supermvp/cache//Log/log.txt**，基于此功能可以后期做一个友好的应用crash提示
+- 崩溃捕捉并写入本地文件(有存储卡写到存储卡，没有保存到内存),基于此功能可以后期做一个友好的应用crash提示
 - 整体框架搭建完毕，新闻列表功能已经实现，各功能正常
 - 下拉刷新与加载更多的解耦
 
