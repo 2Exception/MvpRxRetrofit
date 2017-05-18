@@ -14,8 +14,10 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
+        jcenter("maven://jitcenter.com")
     }
+    
+    
 }
 
 task clean(type: Delete) {
