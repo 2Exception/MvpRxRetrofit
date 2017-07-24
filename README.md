@@ -76,6 +76,6 @@ Github地址：https://github.com/liuling07/SimpleNews
 * [Logger](https://github.com/orhanobut/logger)(打印log现在可以好看多了，使用so easy)
 * [Material](https://github.com/rey5137/material)(一系列meterial的控件，不过用起来有点差强人意，wiki写得不是很全面)
 * [SwipeBackLayout](https://github.com/ikew0ng/SwipeBackLayout)(从未想过右滑返回可以做得这么简单，非常强大！)
-* [PhotoView](https://github.com/bm-x/PhotoView)(支持旋转的photoview，不过没发现有设置单击图片的回调，直接设置OnclickListener不行，**chrisbanes/PhotoView**提供onPhotoTapListener是可以的)
+* [PhotoView](https://github.com/bm-x/PhotoView)(支持旋转的photoview，不过没发现有设置单击图片的回调，直接设置OnclickListener不行，**chrisbanes/PhotoView**提供onPhotoTapListener是可以的o)
 
 
