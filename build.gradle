@@ -14,7 +14,7 @@ buildscript {
 
 allprojects {
     repositories {
-        mavenCentral()
+        //mavenCentral()  //now we can‘t surport this central
         jcenter("maven://jitcenter.com")
     }
     
