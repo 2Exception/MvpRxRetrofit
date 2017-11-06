@@ -16,7 +16,7 @@ allprojects {
     repositories {
     //sjkajkkaslf
         //mavenCentral()  //now we can‘t surport this central
-        jcenter("maven://jitcenter.com")
+        jcenter("")
     }
     
     
