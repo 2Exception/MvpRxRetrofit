@@ -15,7 +15,7 @@ buildscript {
 allprojects {
     repositories {
     //sjkajkkaslf
-        //mavenCentral()  //now we can‘t surport this central
+        mavenCentral()  //now we can‘t surport this central
         jcenter("")
     }
     
