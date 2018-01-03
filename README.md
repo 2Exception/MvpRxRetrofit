@@ -23,7 +23,7 @@ Android项目框架，使用MVP解耦，使用Rxjava链式调用访问网络，�
 - 修改新闻列表为cardview展示
 - 支持新闻查看详情，CollapsingToolbarLayout +　NestedScrollView
 - 支持右滑返回
-- 增加*离线缓存*机制(使用Retrofit和Okhttp实现网络缓存)
+d- 增加*离线缓存*机制(使用Retrofit和Okhttp实现网络缓存)
 - 崩溃捕捉并写入本地文件(有存储卡写到存储卡，没有保存到内存),基于此功能可以后期做一个友好的应用crash提示
 - 整体框架搭建完毕，新闻列表功能已经实现，各功能正常
 - 下拉刷新与加载更多的解耦
@@ -39,7 +39,7 @@ Android项目框架，使用MVP解耦，使用Rxjava链式调用访问网络，�
 ![](./picture2.png)
 
 
-## 深受以下文章影响，感谢大神们的无私讲解
+## 深受以下文章影响，感谢大神们的无私讲解dd
 * [给Android开发者的RxJava详解](http://gank.io/post/560e15be2dca930e00da1083)
 * [深入浅出RxJava](http://blog.csdn.net/lzyzsd/article/details/41833541)
 * [用MVP架构开发Android应用](http://kymjs.com/code/2015/11/09/01)
