@@ -1,4 +1,4 @@
-# MvpRxRetrofit(Please Star me while you read this page)
+# MvpRxRetrofit(Please Star me after you read this page)
 Android项目框架，使用MVP解耦，使用Rxjava链式调用访问网络，其他业务处理也可以用Rx，使用Retrofit网络请求以及数据缓存
 >使用方法以及详解，接下来更新，其实代码里面注释写得很清楚，不过，我后面再完善吧
 >架构还需要封装更多的东西，但是这需要针对具体项目进行封装
@@ -45,6 +45,7 @@ d- 增加*离线缓存*机制(使用Retrofit和Okhttp实现网络缓存)
 * [对MVC、MVP、MVVM的理解](http://blog.csdn.net/napolunyishi/article/details/22722345)
 
 ## **开源项目**
+
 ##### RengwuxianRxjava
 扔物线《给Android开发者的RxJava详解》文章中的例子  
 Github地址：https://github.com/androidmalin/RengwuxianRxjava
