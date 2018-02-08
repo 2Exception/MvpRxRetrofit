@@ -1,9 +1,9 @@
-# MvpRxRetrofit(Star me after you read this page please)
+# MvpRxRetrofit(Star me after you read this page pleases)
 Android项目框架，使用MVP解耦，使用Rxjava链式调用访问网络，其他业务处理也可以用Rx，使用Retrofit网络请求以及数据缓存
 >使用方法以及详解，接下来更新，其实代码里面注释写得很清楚，不过，我后面再完善吧
 >架构还需要封装更多的东西，但是这需要针对具体项目进行封装
 
-## **MVP + RxJava2 + Retrofit2 + Glide**Standard
+## **MVP + RxJava2 + Retrofit2 + Glide*-
 
 ## **简介**
 美图，天气查询应用
