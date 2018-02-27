@@ -50,7 +50,7 @@ d- 增加*离线缓存*机制(使用Retrofit和Okhttp实现网络缓存)
 扔物线《给Android开发者的RxJava详解》文章中的例子  
 Github地址：https://github.com/androidmalin/RengwuxianRxjava
 
-##### SimpleNews
+##### 新闻客户端
 基于Material Design和MVP的新闻客户端    
 Github地址：https://github.com/liuling07/SimpleNews
 
