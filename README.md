@@ -78,5 +78,4 @@ Github地址：https://github.com/liuling07/SimpleNews
 * [PhotoView](https://github.com/bm-x/PhotoView)(支持旋转的photoview，不过没发现有设置单击图片的回调，直接设置OnclickListener不行，**chrisbanes/PhotoView**提供onPhotoTapListener是可以的o)
 
 最近打算研究Material设计的Android实现了，之后会发布相应版本,shangchuangithub
---：研究了一下 ，感觉很炫酷啊
 
