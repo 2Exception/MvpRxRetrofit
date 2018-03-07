@@ -20,7 +20,7 @@ Android项目框架，使用MVP解耦，使用Rxjava链式调用访问网络，�
 - 抽取出一个公共的recyclerview代理类（grid，list合二为一），并支持下拉刷新
 - 天气预报查询，弹窗提醒
 - 修改新闻列表为cardview展示
-- 支持新闻查看详情，CollapsingToolbarLayout +　NestedScrollView
+- 支持新闻查看详情，CollapsingToolbarLayout +　NestedScrollView + ToorBarLayout
 - 支持右滑返回
 d- 增加*离线缓存*机制(使用Retrofit和Okhttp实现网络缓存)
 - 崩溃捕捉并写入本地文件(有存储卡写到存储卡，没有保存到内存),基于此功能可以后期做一个友好的应用crash提示
